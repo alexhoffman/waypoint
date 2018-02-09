@@ -1,0 +1,15 @@
+<mat-nav-list id="results">
+    <h3 matSubheader>Results</h3>
+  <mat-list-item *ngFor="let result of results">
+      <a href="/details"></a>
+      <!--routerLink="/details"-->
+      <img matListAvatar [src]="result.primaryMedia.value" alt="..." /> 
+      <p matLine>{{ result.title.value }}</p>
+      <p matLine>{{ result.invno.value }}</p>
+      <!--<button mat-icon-button (click)="showInfo(link)">-->
+          <mat-icon>keyboard_arrow_right</mat-icon>
+       <!--</button>            -->
+  </mat-list-item>
+</mat-nav-list>
+
+ <a href="" (click)="sendMeHome()">go home</a>
